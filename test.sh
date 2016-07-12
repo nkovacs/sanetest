@@ -48,7 +48,31 @@ mv test2 test/
 sleep 2
 
 echo "testing write to moved file"
-echo "test" >> test/test2/test.txt
+echo "test" > test/test2/test.txt
+
+sleep 2
+
+echo "removing"
+rm -rf test/test2
+
+sleep 2
+
+echo "creating nested file"
+
+mkdir -p test/test2/
+echo "test" > test/test2/test.txt
+
+sleep 2
+
+echo "removing"
+rm -rf test/test2
+
+sleep 2
+
+echo "creating nested file 2 directories deep"
+
+mkdir -p test/test2/test3
+echo "test" > test/test2/test3/test.txt
 
 sleep 2
 
