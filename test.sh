@@ -21,7 +21,7 @@ rm -rf test/test2
 
 sleep 2
 
-echo "testing move of directory with matching file"
+echo "testing move of directory with matching file in subdirectory"
 
 mkdir -p test2/test3
 echo "test" > test2/test3/test.txt
@@ -29,7 +29,7 @@ mv test2 test/
 
 sleep 2
 
-echo "testing write to moved file"
+echo "testing write to moved file in subdirectory"
 echo "test" >> test/test2/test3/test.txt
 
 sleep 2
